@@ -1,4 +1,4 @@
 # Projeto-Integrador---Grupo-05
-Membros: Cleilson Araújo Fernandes
-         Danilo Roberto Bolonhini
+Membros: Cleilson Araújo Fernandes,
+         Danilo Roberto Bolonhini,
          Gustavo da Silva Pereira
