@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title> C-Peças-Cadastro</title>
+      <link rel="stylesheet" type="text/css" href="Style.css">
+   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.CSS">
+      <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+  </head>
+  <bod>
+    <div class="modal fade" id="modalLoguin" tabindex="-1" role="dialog" aria-labelledby="modalLoguinTitulo" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoguinTitulo">Entre na sua conta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">E-mail</label>
+              <input type="email" class="form-control" id="loginEmai"placeholder="Insira o e-mail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha" placeholder="Insira a senha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na conta</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+  <div class="fixed-bottom"></div>
+    <a class="Display 4 h1  " href="file:///C:/Users/Vycto/Desktop/curso/index.html">C-peças</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-item nav-link active mr-md-2 dropdown-toggle" href="#"id="dropdownMenuButton"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Peças<a/>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="file:///C:/Users/Vycto/Desktop/curso/Pe%C3%A7ascarro.html">Carro</a>
+          <a class="dropdown-item active" href="file:///C:/Users/Vycto/Desktop/curso/Pe%C3%A7asmoto.html">Moto</a>
+        </div>
+      </li>
+      <li class="nav-item">
+          <a class="nav-item nav-link mr-md-2 text-dark" href="file:///C:/Users/Vycto/Desktop/curso/Servi%C3%A7o.html">Serviços</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-item nav-link disabled mr-md-2 text-dark" href="file:///C:/Users/Vycto/Desktop/curso/Contato.html">Contatos</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoguin">login</a>
+      </li>
+
+        <a href="file:///C:/Users/Vycto/Desktop/curso/Cadastro.html"></a><button class=" btn btn-outline-primary ml-md-2"type="Submit"> Crie sua conta</button> 
+        <div class="fixed-top"></div></a> 
+       
+    </ul>
+  </div>     
+</nav>
+
+  <section class="containe m-5 bg-light">
+      <div class="my-5 text-center">
+         <span class="h6 d-block">Adiquira produtos na C-peças</span>
+         <h2 class="display-4 text-primary">Cadastre-se</h2>
+      </div> 
+    <div class="row ml-lg-5">
+      <form class="col-lg-6 py-lg-5"action="ClinteControler">
+        <div class="form-row">
+
+               <div class="form-group col-md-6">
+                  <label for="CadastroC">Nome</label>
+                  <input type="text" class="form-control" id="CadastroC" placeholder="Exemplo@ victor"> 
+               </div>
+
+               <div class="form-group col-md-6">
+                   <label for="imputCpf">CPF</label>
+                   <input type="text" class="form-control" id="imputCpf" placeholder="xxx.xxx.xxx.xx"> 
+               </div>
+        
+               <div class="form-group col-md-6">
+                   <label for="EmailClinte">E-mail</label>
+                   <input type="email" class="form-control" id="EmailClinte" placeholder=" Seu e-mail">
+               </div> 
+
+               <div class="form-group col-md-6">
+                   <label for="SenhaClinte">Senha</label>
+                   <input type="password" class="form-control" id="SenhaClinte" placeholder="Senha para acesso">
+               </div> 
+
+               <div class="form-group col-md-12">
+                   <label for="EndereçoClinte">Endereço</label>
+                   <input type="text" class="form-control" id="EndereçoClinte" placeholder="Número,nome da rua e bairro">
+               </div> 
+               <div class="form-group col-md-3">
+                   <label for="TelefoneClinte">Telefone</label>
+                   <input type="text" class="form-control" id="TelefoneClinte">
+               </div> 
+
+               <div class="form-group col-md-3">
+                   <label for="TelefoneClinte">Telefone 2 </label>
+                   <input type="text" class="form-control" id="TelefoneClinte">
+               </div> 
+               <div class="form-group col-md-3 col-6">
+                    <label for="EstadoClinte">Estado</label>
+                    <select id="EstadoClinte" class="form-control">
+                      <option>Selecione o Estado</option>
+                      <option>Distrito Federal(DF)</option>
+                      <option>Não temos suporte para outros estados ainda</option>
+                  </select>
+               </div>
+               <div class="form-group col-md-3 col-6">
+                  <label for="CepClinte">CEP</label>
+                  <input type="text" class="form-control" id="CepClinte" placeholder="xxxxx.xxx">
+               </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                   <input type="checkbox" class="form-check-input" ="">
+                   Click para confirmar cadastro
+                </label>
+               <div class="small col-15">
+                   <a href="#" class="btn btn-primary  btn-lg m-2 ">Cadastre-se</a>
+               </div>
+              </div>
+          </form>
+        </div>
+     <div class="row text-center col-lg py-5 ">
+       <div class="col-lg ">
+          <div class="bg-light rounded p-4 mr-lg-5 box-shadow">
+            <h2>Mêcanico 24h<span class="badge badge-success ml-1">novo</span></h2>
+             <ul class=".lista-plano list-unstyled">
+                 <div class="dropdown-divider"></div>
+              <li>→Atendimento 24h</li>
+                <div class="dropdown-divider"></div>
+              <li>→Qualidade no serviço</li>
+                <div class="dropdown-divider"></div>
+              <li>→Profissinais de qualidade</li> 
+                <div class="dropdown-divider"></div>
+              <li>→Melhores marcas</li> 
+                 <div class="dropdown-divider"></div>
+            </ul>
+            <div class="row py-4">
+              <div class="col">
+                 <a href="#" class=" btn btn-primary btn-lg btn-block ml-5">Conferir</a>
+              </div>
+              <div class="col">
+                <span class="h4 mr-lg-5"> R$ 59,99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class=" bg-dark text-white">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-3">
+            <h4 class="h6">páginas</h4>
+            <ul class="list-unstyled">
+              <li><a href="Serviço.html">Serviços</a></li>
+              <li><a href="Contato.html">contato</a></li>
+              <li><a href="Cadastre.html">Cadastre-se</a></li>
+            </ul> 
+          </div> 
+          <div class="col-md-3 col-6">
+            <h4 class="h6">Peças</h4>
+            <ul class="list-unstyled">
+              <li><a href="carro.html">Carros</a></li>
+              <li><a href="moto.html">Moto</a></li>
+            </ul> 
+          </div> 
+          <div class="col-md-4 col-6">
+            <h4 class="h6">Dados para contato</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>C-peças@gmail.com</li>
+              <li>61 33715589</li>
+              <li>loja-fisica de seg. a dom. das 8 as 18h</li>
+            </ul> 
+          </div> 
+          <div class="col-md-2">
+            <h4 class="h6">Redes sociais</h4>
+            <ul class="list-unstyled">
+             <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Facebook</a></li>
+             <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Instragram</a></li>
+             <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">twitter</a></li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+      <div class="bg-secondary text-center py-3">
+        <p class="mb-0 text-white "> C-peças 2018.</p>    
+      </div>
+    </footer>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jQuery/dist/jQuery.js"></script>
+    <script src="node_modules/Popper.js/dist/umd/Popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  </body>
+
+</html>
